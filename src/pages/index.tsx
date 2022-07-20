@@ -14,10 +14,11 @@ import { Main } from '../components/Main'
 import { DarkModeSwitch } from '../components/DarkModeSwitch'
 import { CTA } from '../components/CTA'
 import { Footer } from '../components/Footer'
+import Navbar from '../components/Navbar'
 
 const Index = () => (
   <Container height="100vh">
-    <Hero />
+    <Navbar />
     <Main>
       <Text color="text">
         Example repository of <Code>Next.js</Code> + <Code>chakra-ui</Code> +{' '}
@@ -44,8 +45,7 @@ const Index = () => (
         </ListItem>
       </List>
     </Main>
-
-    <DarkModeSwitch />
+    
     <Footer>
       <Text>Next ❤️ Chakra</Text>
     </Footer>

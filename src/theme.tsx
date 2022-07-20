@@ -1,6 +1,6 @@
 import { extendTheme } from '@chakra-ui/react'
 
-const fonts = { mono: `'Menlo', monospace` }
+const fonts = { mono: `'Menlo', monospace`, heading: `'Noto Sans JP', sans-serif` }
 
 const theme = extendTheme({
   semanticTokens: {

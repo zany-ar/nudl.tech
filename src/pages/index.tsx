@@ -17,14 +17,146 @@ import { Footer } from '../components/Footer'
 import Navbar from '../components/Navbar'
 
 const Index = () => (
-  <Container height="100vh">
+  <Container>
     <Navbar />
     <Main>
       <Text color="text">
         Example repository of <Code>Next.js</Code> + <Code>chakra-ui</Code> +{' '}
         <Code>TypeScript</Code>.
       </Text>
-
+      <List spacing={3} my={0} color="text">
+        <ListItem>
+          <ListIcon as={CheckCircleIcon} color="green.500" />
+          <ChakraLink
+            isExternal
+            href="https://chakra-ui.com"
+            flexGrow={1}
+            mr={2}
+          >
+            Chakra UI <LinkIcon />
+          </ChakraLink>
+        </ListItem>
+        <ListItem>
+          <ListIcon as={CheckCircleIcon} color="green.500" />
+          <ChakraLink isExternal href="https://nextjs.org" flexGrow={1} mr={2}>
+            Next.js <LinkIcon />
+          </ChakraLink>
+        </ListItem>
+      </List>
+      <List spacing={3} my={0} color="text">
+        <ListItem>
+          <ListIcon as={CheckCircleIcon} color="green.500" />
+          <ChakraLink
+            isExternal
+            href="https://chakra-ui.com"
+            flexGrow={1}
+            mr={2}
+          >
+            Chakra UI <LinkIcon />
+          </ChakraLink>
+        </ListItem>
+        <ListItem>
+          <ListIcon as={CheckCircleIcon} color="green.500" />
+          <ChakraLink isExternal href="https://nextjs.org" flexGrow={1} mr={2}>
+            Next.js <LinkIcon />
+          </ChakraLink>
+        </ListItem>
+      </List>
+      <List spacing={3} my={0} color="text">
+        <ListItem>
+          <ListIcon as={CheckCircleIcon} color="green.500" />
+          <ChakraLink
+            isExternal
+            href="https://chakra-ui.com"
+            flexGrow={1}
+            mr={2}
+          >
+            Chakra UI <LinkIcon />
+          </ChakraLink>
+        </ListItem>
+        <ListItem>
+          <ListIcon as={CheckCircleIcon} color="green.500" />
+          <ChakraLink isExternal href="https://nextjs.org" flexGrow={1} mr={2}>
+            Next.js <LinkIcon />
+          </ChakraLink>
+        </ListItem>
+      </List>
+      <List spacing={3} my={0} color="text">
+        <ListItem>
+          <ListIcon as={CheckCircleIcon} color="green.500" />
+          <ChakraLink
+            isExternal
+            href="https://chakra-ui.com"
+            flexGrow={1}
+            mr={2}
+          >
+            Chakra UI <LinkIcon />
+          </ChakraLink>
+        </ListItem>
+        <ListItem>
+          <ListIcon as={CheckCircleIcon} color="green.500" />
+          <ChakraLink isExternal href="https://nextjs.org" flexGrow={1} mr={2}>
+            Next.js <LinkIcon />
+          </ChakraLink>
+        </ListItem>
+      </List>
+      <List spacing={3} my={0} color="text">
+        <ListItem>
+          <ListIcon as={CheckCircleIcon} color="green.500" />
+          <ChakraLink
+            isExternal
+            href="https://chakra-ui.com"
+            flexGrow={1}
+            mr={2}
+          >
+            Chakra UI <LinkIcon />
+          </ChakraLink>
+        </ListItem>
+        <ListItem>
+          <ListIcon as={CheckCircleIcon} color="green.500" />
+          <ChakraLink isExternal href="https://nextjs.org" flexGrow={1} mr={2}>
+            Next.js <LinkIcon />
+          </ChakraLink>
+        </ListItem>
+      </List>
+      <List spacing={3} my={0} color="text">
+        <ListItem>
+          <ListIcon as={CheckCircleIcon} color="green.500" />
+          <ChakraLink
+            isExternal
+            href="https://chakra-ui.com"
+            flexGrow={1}
+            mr={2}
+          >
+            Chakra UI <LinkIcon />
+          </ChakraLink>
+        </ListItem>
+        <ListItem>
+          <ListIcon as={CheckCircleIcon} color="green.500" />
+          <ChakraLink isExternal href="https://nextjs.org" flexGrow={1} mr={2}>
+            Next.js <LinkIcon />
+          </ChakraLink>
+        </ListItem>
+      </List>
+      <List spacing={3} my={0} color="text">
+        <ListItem>
+          <ListIcon as={CheckCircleIcon} color="green.500" />
+          <ChakraLink
+            isExternal
+            href="https://chakra-ui.com"
+            flexGrow={1}
+            mr={2}
+          >
+            Chakra UI <LinkIcon />
+          </ChakraLink>
+        </ListItem>
+        <ListItem>
+          <ListIcon as={CheckCircleIcon} color="green.500" />
+          <ChakraLink isExternal href="https://nextjs.org" flexGrow={1} mr={2}>
+            Next.js <LinkIcon />
+          </ChakraLink>
+        </ListItem>
+      </List>
       <List spacing={3} my={0} color="text">
         <ListItem>
           <ListIcon as={CheckCircleIcon} color="green.500" />
@@ -45,7 +177,7 @@ const Index = () => (
         </ListItem>
       </List>
     </Main>
-    
+
     <Footer>
       <Text>Next ❤️ Chakra</Text>
     </Footer>

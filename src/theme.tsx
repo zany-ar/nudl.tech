@@ -1,4 +1,5 @@
 import { extendTheme } from '@chakra-ui/react'
+import { mode } from '@chakra-ui/theme-tools'
 
 const fonts = { mono: `'Menlo', monospace`, heading: `'Noto Sans JP', sans-serif` }
 
@@ -21,6 +22,14 @@ const theme = extendTheme({
     radii: {
       button: '12px',
     },
+  },
+  components: {
+    Link: {
+      baseStyle: props => ({
+        color: mode('#3d7aed', '#ff63c3')(props),
+        textUnderlineOffset: 3
+      })
+    }
   },
   colors: {
     black: '#16161D',

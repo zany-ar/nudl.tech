@@ -23,9 +23,9 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
   return (
     <NextLink href={href} passHref scroll={false}>
       <Link
+        rounded={'button'}
         p={2}
-        bg={active ? 'grassTeal' : undefined}
-        color={active ? '#202023' : inactiveColor}
+        color={inactiveColor}
         target={target}
         {...props}
       >
@@ -46,6 +46,8 @@ const Navbar = props => {
       bg={useColorModeValue('#ffffff40', '#20202380')}
       css={{ backdropFilter: 'blur(30px)' }}
       zIndex={2}
+      fontFamily={'mono'}
+      boxShadow={"0 2px 3px -2px rgba(0,0,0,.5)"}
       {...props}
     >
       <Container
@@ -72,7 +74,7 @@ const Navbar = props => {
         >
           <LinkItem
             target="_self"
-            href="/#about"
+            href="/#"
             path={path}
             display="inline-flex"
             alignItems="center"

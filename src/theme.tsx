@@ -22,6 +22,10 @@ const theme = extendTheme({
         default: 'orange.700',
         _dark: 'orange.200',
       },
+      navbg: {
+        default: '#ffffff',
+        _dark: '#20202380'
+      }
     },
     radii: {
       button: '12px',

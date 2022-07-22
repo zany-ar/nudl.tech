@@ -20,7 +20,8 @@ import { Footer } from '../components/Footer'
 import Navbar from '../components/Navbar'
 import NextLink from 'next/link'
 import { email } from '../../details'
-import { IoIdCard, IoLogoGithub, IoLogoYoutube } from 'react-icons/io5'
+import { IoIdCard, IoLogoGithub, IoLogoYoutube, IoTerminal } from 'react-icons/io5'
+import ProjectCard from '../components/ProjectCard'
 
 
 const Helper = (props) => (
@@ -157,7 +158,33 @@ const Index = () => {
           </Box>
         </Box>
 
-        
+        {/* Projects */}
+        <Box textAlign={'center'} mt={'150px !important'}>
+          <Heading as='h1' size={'md'} alignItems='center' display="inline-flex">
+            <Text color={"helper"} mr='10px'><IoTerminal /></Text> Projects
+          </Heading>
+          <br />
+          <Text color={'text'}>
+            Some of my public projects.
+          </Text>
+          <br />
+          <Box>
+            <ProjectCard
+              title='Pentesting Jobs'
+              description={`A job board for cyber-security experts, find jobs / post jobs.`}
+              link='https://pentestingjobs.co'
+              techstack={["Typescript", "Next.js", "MongoDB", "Material-UI"]}
+              imgsrc={'/images/pentesting_jobs.png'} />
+            <ProjectCard
+              right={true}
+              title='Nudolio'
+              description={`Open source software license key manager built with MERN & redux with a web api to build on.`}
+              link='https://nudolio.herokuapp.com/'
+              github={'https://github.com/0xCN/nudolio'}
+              techstack={["Express.js", "React.js", "Redux", "MongoDB"]}
+              imgsrc={'/images/nudolio.png'} />
+          </Box>
+        </Box>
         <Footer></Footer>
       </Main>
     </Container>

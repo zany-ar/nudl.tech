@@ -18,6 +18,10 @@ const theme = extendTheme({
         default: '#FF0080',
         _dark: '#fbec8f',
       },
+      helper: {
+        default: 'orange.700',
+        _dark: 'orange.200',
+      },
     },
     radii: {
       button: '12px',
@@ -32,7 +36,7 @@ const theme = extendTheme({
     }
   },
   colors: {
-    black: '#16161D',
+    black: '#16161D'
   },
   fonts,
 })

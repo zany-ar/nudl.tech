@@ -11,14 +11,14 @@ import {
   MenuList,
   MenuButton,
   IconButton,
-  useColorModeValue
+  useColorModeValue,
+  Text
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { DarkModeSwitch } from './DarkModeSwitch'
 import { IoIdCard, IoInformationSharp, IoLayers, IoLogoGithub, IoTerminal } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
-  const active = path === href
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
   return (
     <NextLink href={href} passHref scroll={false}>
@@ -74,14 +74,14 @@ const Navbar = props => {
         >
           <LinkItem
             target="_self"
-            href="/#"
+            href="/#about-me"
             path={path}
             display="inline-flex"
             alignItems="center"
             style={{ gap: 4 }}
             pl={2}>
-            <IoIdCard />
-            About
+            <Text color={"helper"}><IoIdCard /></Text>
+            About Me
           </LinkItem>
           <LinkItem
             target="_self"
@@ -91,7 +91,7 @@ const Navbar = props => {
             alignItems="center"
             style={{ gap: 4 }}
             pl={2}>
-            <IoTerminal />
+            <Text color={"helper"}><IoTerminal /></Text>
             Projects
           </LinkItem>
           <LinkItem
@@ -102,7 +102,7 @@ const Navbar = props => {
             alignItems="center"
             style={{ gap: 4 }}
             pl={2}>
-            <IoLayers />
+            <Text color={"helper"}><IoLayers /></Text>
             Tech Stack
           </LinkItem>
           <LinkItem
@@ -114,7 +114,7 @@ const Navbar = props => {
             style={{ gap: 4 }}
             pl={2}
           >
-            <IoLogoGithub />
+            <Text color={"helper"}><IoLogoGithub /></Text>
             Source
           </LinkItem>
         </Stack>
@@ -131,8 +131,8 @@ const Navbar = props => {
                 aria-label="Options"
               />
               <MenuList>
-                <NextLink href="/#about" passHref>
-                  <MenuItem as={Link}>About</MenuItem>
+                <NextLink href="/#about-me" passHref>
+                  <MenuItem as={Link}>About Me</MenuItem>
                 </NextLink>
                 <NextLink href="/#projects" passHref>
                   <MenuItem as={Link}>Projects</MenuItem>

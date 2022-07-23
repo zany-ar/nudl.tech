@@ -30,7 +30,7 @@ export default function ProjectCard({ imgsrc, title, description, techstack, lin
         overflow={'none'}
         padding={4}>
         <Link
-          maxW={{ md: '400px' }} minW={'300px'}
+          maxW={{ md: '450px' }} minW={'300px'}
           position={{ base: 'absolute', md: 'relative' }}
           href={link}
           target="_blank"

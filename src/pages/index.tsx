@@ -12,16 +12,21 @@ import {
   ListItem,
   ListIcon,
   List,
+  SimpleGrid,
+  Icon,
+  VStack,
 } from '@chakra-ui/react'
 import { CheckCircleIcon, ChevronRightIcon, CopyIcon, EmailIcon, LinkIcon } from '@chakra-ui/icons'
-import { Container } from '../components/Container'
-import { Main } from '../components/Main'
-import { Footer } from '../components/Footer'
-import Navbar from '../components/Navbar'
+import { Container } from '../components/layout/Container'
+import { Main } from '../components/layout/Main'
+import { Footer } from '../components/layout/Footer'
+import Navbar from '../components/layout/Navbar'
 import NextLink from 'next/link'
-import { email } from '../../details'
-import { IoIdCard, IoLogoGithub, IoLogoYoutube, IoTerminal } from 'react-icons/io5'
+import { email, projects, sideProjects } from '../../details'
+import { IoFileTrayFull, IoFolderOpenOutline, IoIdCard, IoLink, IoLogoGithub, IoLogoYoutube, IoTerminal } from 'react-icons/io5'
 import ProjectCard from '../components/ProjectCard'
+import { Tags } from '../components/Tags'
+import { SideProjectCard } from '../components/SideProjectCard'
 
 
 const Helper = (props) => (
@@ -136,7 +141,7 @@ const Index = () => {
               </ListItem>
               <ListItem>
                 <ListIcon as={ChevronRightIcon} color="helper" />
-                Typescript
+                TypeScript
               </ListItem>
               <ListItem>
                 <ListIcon as={ChevronRightIcon} color="helper" />
@@ -159,6 +164,7 @@ const Index = () => {
         </Box>
 
         {/* Projects */}
+
         <Box textAlign={'center'} mt={'150px !important'}>
           <Heading as='h1' size={'md'} alignItems='center' display="inline-flex">
             <Text color={"helper"} mr='10px'><IoTerminal /></Text> Projects
@@ -169,22 +175,53 @@ const Index = () => {
           </Text>
           <br />
           <Box>
-            <ProjectCard
-              title='Pentesting Jobs'
-              description={`A job board for cyber-security experts, find jobs / post jobs.`}
-              link='https://pentestingjobs.co'
-              techstack={["Typescript", "Next.js", "MongoDB", "Material-UI"]}
-              imgsrc={'/images/pentesting_jobs.png'} />
-            <ProjectCard
-              right={true}
-              title='Nudolio'
-              description={`Open source software license key manager built with MERN & redux with a web api to build on.`}
-              link='https://nudolio.herokuapp.com/'
-              github={'https://github.com/0xCN/nudolio'}
-              techstack={["Express.js", "React.js", "Redux", "MongoDB"]}
-              imgsrc={'/images/nudolio.png'} />
+            {projects.map((project, i) => (
+              <ProjectCard
+                key={i}
+                right={i % 2 == 0 ? true : false}
+                title={project.title}
+                description={project.description}
+                fontFamily={'gugi'}
+                fontWeight={200}
+                techstack={project.techstack}
+                imgsrc={project.imgsrc}
+                link={project['link']}
+                github={project['github']} />
+            ))}
+
           </Box>
         </Box>
+
+        {/* Side Projects */}
+
+        <Box textAlign={'center'} mt={'150px !important'}>
+          <Heading as='h1' size={'md'} alignItems='center' display="inline-flex">
+            <Text color={"helper"} mr='10px'><IoFileTrayFull /></Text> Side Projects
+          </Heading>
+          <br />
+          <Text color={'text'}>
+            Projects which made me smile!
+          </Text>
+          <br />
+          <br />
+          <SimpleGrid
+            columns={{ base: 1, md: 2 }}
+            spacing='20px'
+          >
+            {sideProjects.map((data, i) => (
+              <SideProjectCard
+                key={i}
+                title={data.title}
+                description={data.description}
+                techstack={data.techstack}
+                github={data['github']}
+                link={data['link']}
+                youtube={data['youtube']}
+              />
+            ))}
+          </SimpleGrid>
+        </Box>
+
         <Footer></Footer>
       </Main>
     </Container>

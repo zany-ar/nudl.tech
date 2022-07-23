@@ -13,11 +13,11 @@ import {
   Text,
   useColorModeValue,
 } from '@chakra-ui/react';
-import { useState } from 'react';
 import { IoLink, IoLogoGithub } from 'react-icons/io5';
+import { Tags } from './Tags';
 
-export default function ProjectCard({ imgsrc, title, description, techstack, link, github = null, right = false }) {
-  const [hover, setHover] = useState(false);
+
+export default function ProjectCard({ imgsrc, title, description, techstack, link, fontFamily = "mono", fontWeight = 400, github = null, right = false }) {
 
   return (
     <Center py={6}>
@@ -34,10 +34,9 @@ export default function ProjectCard({ imgsrc, title, description, techstack, lin
           position={{ base: 'absolute', md: 'relative' }}
           href={link}
           target="_blank"
-          transition="all 0.7s ease"
-          filter={{ "base": "brightness(20%)", md: !hover ? "brightness(50%)" : "brightness(100%)" }}
-          onMouseEnter={() => setHover(true)}
-          onMouseLeave={() => setHover(false)}
+          transition="all 0.3s ease"
+          filter={{ "base": "brightness(20%)", md: "brightness(60%)" }}
+          _hover={{ filter: { md: "brightness(100%)" } }}
         >
           <Image
             zIndex={0}
@@ -62,7 +61,7 @@ export default function ProjectCard({ imgsrc, title, description, techstack, lin
           p={1}
           pt={2}>
           <Box verticalAlign={'top'}>
-            <Heading fontSize={'2xl'} fontFamily="mono">
+            <Heading fontSize={'2xl'} fontFamily={fontFamily} fontWeight={fontWeight}>
               {title}
             </Heading></Box>
           <Box
@@ -91,22 +90,9 @@ export default function ProjectCard({ imgsrc, title, description, techstack, lin
               </Button>
             )}
           </Box>
-          <Stack align={'center'} justify={'center'} direction={'row'} mt={6}>
-            {techstack.map((tech, i) => (
-              <Badge
-                key={i}
-                px={2}
-                py={1}
-                bg={useColorModeValue('gray.50', 'gray.800')}
-                color="helper"
-                fontWeight={'400'}>
-                {tech}
-              </Badge>
-            ))}
-
-          </Stack>
+          <Tags techstack={techstack} />
         </Stack>
       </Stack>
-    </Center>
+    </Center >
   );
 }

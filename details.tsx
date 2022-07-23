@@ -3,6 +3,29 @@ import NextLink from "next/link"
 import { Link } from "@chakra-ui/react"
 
 
+// <head> tag info
+
+export const head = {
+  title: 'nudlツ portfolio',
+  description: `Hello! My name is Zanyar, I build web applications, freelance, tutor programming, and live off eating instant ramen 🍜.`,
+  keywords: "0xCN, nudlツ, Zanyar Jamal, Freelancer, Web Developer, Cyber Security Enthusiast, Full Stack Developer",
+  url: "https://nudl.tech",
+  image: "https://nudl.tech/screenshot.png"
+}
+
+
+// portfolio info
+// { 
+//   email,
+//   intro,
+//   social,
+//   aboutMe,
+//   recentTechnologies,
+//   projects,
+//   sideProjects
+// } 
+
+
 export const email = "zanyar@nudl.tech"
 
 export const intro = {

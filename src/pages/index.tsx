@@ -22,16 +22,12 @@ import { Main } from '../components/layout/Main'
 import { Footer } from '../components/layout/Footer'
 import Navbar from '../components/layout/Navbar'
 import NextLink from 'next/link'
-import { email, projects, sideProjects } from '../../details'
+import { aboutMe, email, intro, projects, recentTechnologies, sideProjects, social } from '../../details'
 import { IoFileTrayFull, IoFolderOpenOutline, IoIdCard, IoLink, IoLogoGithub, IoLogoYoutube, IoTerminal } from 'react-icons/io5'
 import ProjectCard from '../components/ProjectCard'
 import { Tags } from '../components/Tags'
 import { SideProjectCard } from '../components/SideProjectCard'
-
-
-const Helper = (props) => (
-  <Text color={'helper'} as='span' {...props} />
-)
+import { Social } from '../components/Socail'
 
 
 const Index = () => {
@@ -47,17 +43,13 @@ const Index = () => {
             Hi, my name is
           </Text>
           <Heading as='h1' size={'2xl'} mt='20px !important' >
-            Zanyar Jamal
+            {intro.name}
           </Heading>
           <Heading as='h1' color={'text'} size={'lg'} mt='30px !important' >
-            I build web applications.
+            {intro.moto}
           </Heading>
           <Text color="text" maxW={'600px'} mt='30px !important'>
-            I'm a full stack developer and a freelancer who likes to build digital products and services, alias {' '}
-            <NextLink href={'https://github.com/0xCN/'} passHref>
-              <Link>nudlツ</Link>
-            </NextLink>.
-            If you want to partner up on a project or just want to talk:
+            {intro.text}
           </Text>
           <Box mt={'55px !important'}>
             <Button
@@ -86,29 +78,9 @@ const Index = () => {
             </Tooltip>
           </Box>
           <Box mt={'30px !important'}>
-            <Button
-              mr={"5px"}
-              as={'a'}
-              href="https://github.com/0xCN"
-              variant={'outline'}
-              rounded={'button'}
-              leftIcon={<IoLogoGithub />}
-              size="sm"
-              target={"_blank"}
-            >
-              GitHub
-            </Button>
-            <Button
-              as={'a'}
-              href="https://www.youtube.com/channel/UCjHuPi8CE4U_5BbnpyYvjQg"
-              variant={'outline'}
-              rounded={'button'}
-              leftIcon={<IoLogoYoutube />}
-              size="sm"
-              target={"_blank"}
-            >
-              YouTube
-            </Button>
+            <Social
+              github={social.github}
+              youtube={social.youtube} />
           </Box>
         </Box>
 
@@ -121,44 +93,16 @@ const Index = () => {
           <br />
           <br />
           <Text color="text" maxW={'600px'}>
-            Hello! My name is <Helper>Zanyar</Helper>, I build web applications, freelance, tutor programming, and live off eating instant ramen 🍜.
-            <br />
-            <br />
-            I first started out as a <Helper>cyber-security enthusiast</Helper> — and learned programming only to build automated tools to make hacking easier and faster.
-            <br />
-            <br />
-            Since then, I’ve updated my repertoire with the <Helper>latest technologies</Helper>, and have even become a jack of all trades and worked in most fields including {' '}
-            <Helper>System Design</Helper>, <Helper>Mobile App Development</Helper>, and my current occupation a <Helper>Full Stack Developer</Helper>.
-            <br />
-            <br />
-            Here are a few technologies I’ve been working with recently:
+            {aboutMe}
           </Text>
           <Box mt={'30px'}>
             <List display={'grid'} gap={'5px 10px'} gridTemplateColumns={'repeat(2, minmax(100px, 200px))'} >
-              <ListItem>
-                <ListIcon as={ChevronRightIcon} color="helper" />
-                Next.js
-              </ListItem>
-              <ListItem>
-                <ListIcon as={ChevronRightIcon} color="helper" />
-                TypeScript
-              </ListItem>
-              <ListItem>
-                <ListIcon as={ChevronRightIcon} color="helper" />
-                MongoDB
-              </ListItem>
-              <ListItem>
-                <ListIcon as={ChevronRightIcon} color="helper" />
-                Redis
-              </ListItem>
-              <ListItem>
-                <ListIcon as={ChevronRightIcon} color="helper" />
-                Digital Ocean
-              </ListItem>
-              <ListItem>
-                <ListIcon as={ChevronRightIcon} color="helper" />
-                Chakra-UI
-              </ListItem>
+              {recentTechnologies.map((tech, i) => (
+                <ListItem key={i}>
+                  <ListIcon as={ChevronRightIcon} color="helper" />
+                  {tech}
+                </ListItem>
+              ))}
             </List>
           </Box>
         </Box>
@@ -227,5 +171,6 @@ const Index = () => {
     </Container>
   )
 }
+
 
 export default Index

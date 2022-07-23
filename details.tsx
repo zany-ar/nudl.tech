@@ -1,4 +1,40 @@
+import { Helper } from "./src/components/Helper"
+import NextLink from "next/link"
+import { Link } from "@chakra-ui/react"
+
+
 export const email = "zanyar@nudl.tech"
+
+export const intro = {
+  name: 'Zanyar Jamal', 
+  moto: 'I build web applications.',
+  text: (<>I'm a full stack developer and a freelancer who likes to build digital products and services, alias {' '}
+  <NextLink href={'https://github.com/0xCN/'} passHref>
+    <Link>nudlツ</Link>
+  </NextLink>.
+  If you want to partner up on a project or just want to talk:</>)
+}
+
+export const social = {
+  github: 'https://github.com/0xCN/',
+  youtube: 'https://www.youtube.com/channel/UCjHuPi8CE4U_5BbnpyYvjQg'
+}
+
+export const aboutMe = (<>
+  Hello! My name is <Helper>Zanyar</Helper>, I build web applications, freelance, tutor programming, and live off eating instant ramen 🍜.
+  <br />
+  <br />
+  I first started out as a <Helper>cyber-security enthusiast</Helper> — and learned programming only to build automated tools to make hacking easier and faster.
+  <br />
+  <br />
+  Since then, I’ve updated my repertoire with the <Helper>latest technologies</Helper>, and have even become a jack of all trades and worked in most fields including {' '}
+  <Helper>System Design</Helper>, <Helper>Mobile App Development</Helper>, and my current occupation a <Helper>Full Stack Developer</Helper>.
+  <br />
+  <br />
+  Here are a few technologies I’ve been working with recently:
+</>)
+
+export const recentTechnologies = ["Next.js", "TypeScript", "MongoDB", "Redis", "Digital Ocean", "Chakra-UI"]
 
 export const projects = [
   {

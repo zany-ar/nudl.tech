@@ -9,7 +9,8 @@ export const intro = {
   name: 'Zanyar Jamal',
   moto: 'I build web applications.',
   text: (
-    <>I'm a full stack developer and a freelancer who likes to build digital products and services, alias {' '}
+    <>
+      I'm a full stack developer and a freelancer who likes to build digital products and services, alias {' '}
       <NextLink href={'https://github.com/0xCN/'} passHref>
         <Link>nudlツ</Link>
       </NextLink>.

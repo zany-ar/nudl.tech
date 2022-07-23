@@ -25,7 +25,6 @@ import NextLink from 'next/link'
 import { aboutMe, email, intro, projects, recentTechnologies, sideProjects, social } from '../../details'
 import { IoFileTrayFull, IoFolderOpenOutline, IoIdCard, IoLink, IoLogoGithub, IoLogoYoutube, IoTerminal } from 'react-icons/io5'
 import ProjectCard from '../components/ProjectCard'
-import { Tags } from '../components/Tags'
 import { SideProjectCard } from '../components/SideProjectCard'
 import { Social } from '../components/Socail'
 
@@ -34,7 +33,7 @@ const Index = () => {
   return (
     <Container>
       <Navbar />
-      <Main>
+      <Main id='intro'>
 
         {/* Intro */}
 
@@ -42,7 +41,7 @@ const Index = () => {
           <Text color={'helper'} fontFamily={'mono'}>
             Hi, my name is
           </Text>
-          <Heading as='h1' size={'2xl'} mt='20px !important' >
+          <Heading as='h1' size={'2xl'} mt='20px !important'>
             {intro.name}
           </Heading>
           <Heading as='h1' color={'text'} size={'lg'} mt='30px !important' >
@@ -86,6 +85,7 @@ const Index = () => {
 
         {/* About Me */}
 
+        <Heading id={'about-me'} top="40px" position='relative' visibility={'hidden'}/>
         <Box textAlign={'left'} mt={'150px !important'}>
           <Heading as='h1' size={'md'} alignItems='center' display="inline-flex">
             <Text color={"helper"} mr='10px'><IoIdCard /></Text> About Me
@@ -109,6 +109,7 @@ const Index = () => {
 
         {/* Projects */}
 
+        <Heading id={'projects'} position='relative' top={'40px'} visibility={'hidden'}/>
         <Box textAlign={'center'} mt={'150px !important'}>
           <Heading as='h1' size={'md'} alignItems='center' display="inline-flex">
             <Text color={"helper"} mr='10px'><IoTerminal /></Text> Projects

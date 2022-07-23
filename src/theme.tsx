@@ -48,6 +48,13 @@ const theme = extendTheme({
     black: '#16161D'
   },
   fonts,
+  styles: {
+    global: (_props) => ({
+      'html': {
+        scrollBehavior: 'smooth'
+      }
+    })
+  }
 })
 
 export default theme

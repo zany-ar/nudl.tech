@@ -54,6 +54,7 @@ export const sideProjects = [
   {
     title: 'PasteJS',
     description: `A chrome extension to prevent both CSS & JS PasteJacking attacks`,
-    techstack: ['JavaScript', 'HTML5']
+    techstack: ['JavaScript', 'HTML5'],
+    github: 'https://github.com/0xCN/PasteJS'
   }
 ]

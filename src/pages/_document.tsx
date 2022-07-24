@@ -17,7 +17,7 @@ export default class Document extends NextDocument {
           <meta name="description" content={head.description} />
           <meta name="keywords" content={head.keywords} />
           <meta name="robots" content="index, follow" />
-          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+          <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
           <meta name="language" content="English" />
           <meta name="revisit-after" content="5 days" />
           <meta name="author" content="nudlツ" />

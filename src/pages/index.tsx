@@ -22,11 +22,12 @@ import { Main } from '../components/layout/Main'
 import { Footer } from '../components/layout/Footer'
 import Navbar from '../components/layout/Navbar'
 import NextLink from 'next/link'
-import { aboutMe, email, intro, projects, recentTechnologies, sideProjects, social } from '../../details'
-import { IoFileTrayFull, IoFolderOpenOutline, IoIdCard, IoLink, IoLogoGithub, IoLogoYoutube, IoTerminal } from 'react-icons/io5'
+import { aboutMe, email, intro, projects, recentTechnologies, sideProjects, social, techstack } from '../../details'
+import { IoFileTrayFull, IoFolderOpenOutline, IoIdCard, IoLayers, IoLink, IoLogoGithub, IoLogoYoutube, IoTerminal } from 'react-icons/io5'
 import ProjectCard from '../components/ProjectCard'
 import { SideProjectCard } from '../components/SideProjectCard'
 import { Social } from '../components/Socail'
+import { TechStack } from '../components/TechStack'
 
 
 const Index = () => {
@@ -165,6 +166,21 @@ const Index = () => {
               />
             ))}
           </SimpleGrid>
+        </Box>
+
+        {/* Tech Stack */}
+        
+        <Heading id={'tech-stack'} position='relative' top={'40px'} visibility={'hidden'}/>
+        <Box textAlign={'center'} mt={'150px !important'}>
+          <Heading as='h1' size={'md'} alignItems='center' display="inline-flex">
+            <Text color={"helper"} mr='10px'><IoLayers /></Text> Tech Stack
+          </Heading>
+          <br />
+          <Text color={'text'}>
+            Technologies I use on regular basis.
+          </Text>
+          <br />
+          <TechStack techstack={techstack} />
         </Box>
 
         <Footer></Footer>

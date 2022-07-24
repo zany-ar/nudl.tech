@@ -16,7 +16,7 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { DarkModeSwitch } from './DarkModeSwitch'
-import { IoIdCard, IoInformationSharp, IoLayers, IoLogoGithub, IoTerminal } from 'react-icons/io5'
+import { IoIdCard, IoLayers, IoLogoGithub, IoTerminal } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
@@ -98,7 +98,7 @@ const Navbar = props => {
           </LinkItem>
           <LinkItem
             target="_self"
-            href="/#projects"
+            href="/#tech-stack"
             path={path}
             display="inline-flex"
             alignItems="center"

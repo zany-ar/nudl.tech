@@ -25,7 +25,6 @@ export const head = {
 //   sideProjects
 // } 
 
-
 export const email = "zanyar@nudl.tech"
 
 export const intro = {
@@ -121,5 +120,114 @@ export const sideProjects = [
     description: `A chrome extension to prevent both CSS & JS PasteJacking attacks`,
     techstack: ['JavaScript', 'HTML5'],
     github: 'https://github.com/0xCN/PasteJS'
+  }
+]
+
+export const tabs = ["Web Development", "Web Design", "Database", "General"]
+export const techstack = [
+  {
+    name: 'Visual Studio Code',
+    image: '/tech/vscode.png',
+    tab: 'General'
+  },
+  {
+    name: 'Next.js',
+    image: '/tech/nextjs.png',
+    tab: 'Web Development'
+  },
+  {
+    name: 'Figma',
+    image: '/tech/figma.png',
+    tab: 'Web Design'
+  },
+  {
+    name: 'React.js',
+    image: '/tech/reactjs.png',
+    tab: 'Web Development'
+  },
+  {
+    name: 'Express.js',
+    image: '/tech/expressjs.png',
+    tab: 'Web Development'
+  },
+  {
+    name: 'MongoDB',
+    image: '/tech/mongodb.png',
+    tab: 'Database'
+  },
+  {
+    name: 'JavaScript',
+    image: '/tech/javascript.png',
+    tab: 'General'
+  },
+  {
+    name: 'TypeScript',
+    image: '/tech/typescript.png',
+    tab: 'General'
+  },
+  {
+    name: 'PHP',
+    image: '/tech/php.png',
+    tab: 'General'
+  },
+  {
+    name: 'Python',
+    image: '/tech/python.png',
+    tab: 'General'
+  },
+  {
+    name: 'Node.js',
+    image: '/tech/nodejs.png',
+    tab: 'General'
+  },
+  {
+    name: 'PostgreSQL',
+    image: '/tech/postgresql.png',
+    tab: 'Database'
+  },
+  {
+    name: 'MySQL',
+    image: '/tech/mysql.png',
+    tab: 'Database'
+  },
+  {
+    name: 'Rust Lang',
+    image: '/tech/rustlang.png',
+    tab: 'General'
+  },
+  {
+    name: 'C#',
+    image: '/tech/csharp.png',
+    tab: 'General'
+  },
+  {
+    name: 'Redis',
+    image: '/tech/redis.png',
+    tab: 'Database'
+  },
+  {
+    name: 'Django',
+    image: '/tech/django.png',
+    tab: 'Web Development'
+  },
+  {
+    name: 'Flask',
+    image: '/tech/flask.png',
+    tab: 'Web Development'
+  },
+  {
+    name: '.Net Core',
+    image: '/tech/dotnetcore.png',
+    tab: 'Web Development'
+  },
+  {
+    name: 'Chakra UI',
+    image: '/tech/chakraui.png',
+    tab: 'Web Design'
+  },
+  {
+    name: 'Material UI',
+    image: '/tech/materialui.png',
+    tab: 'Web Design'
   }
 ]

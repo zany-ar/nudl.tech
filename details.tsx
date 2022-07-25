@@ -1,6 +1,7 @@
 import { Helper } from "./src/components/Helper"
 import NextLink from "next/link"
 import { Link } from "@chakra-ui/react"
+import { IoCodeOutline, IoCodeSlashOutline, IoColorWandOutline, IoEarthOutline, IoLayersOutline, IoLeafOutline, IoLogoFigma, IoLogoJavascript, IoLogoNodejs, IoLogoPython, IoLogoReact, IoServerOutline, IoTriangleOutline } from "react-icons/io5"
 
 
 // <head> tag info
@@ -128,106 +129,127 @@ export const techstack = [
   {
     name: 'Visual Studio Code',
     image: '/tech/vscode.png',
-    tab: 'General'
+    tab: 'General',
+    icon: (<IoCodeSlashOutline size='md' />)
   },
   {
     name: 'Next.js',
     image: '/tech/nextjs.png',
-    tab: 'Web Development'
+    tab: 'Web Development',
+    icon: (<IoTriangleOutline size='md' />)
   },
   {
     name: 'Figma',
     image: '/tech/figma.png',
-    tab: 'Web Design'
+    tab: 'Web Design',
+    icon: (<IoLogoFigma size='md' />)
   },
   {
     name: 'React.js',
     image: '/tech/reactjs.png',
-    tab: 'Web Development'
+    tab: 'Web Development',
+    icon: (<IoLogoReact size='md' />)
   },
   {
     name: 'Express.js',
     image: '/tech/expressjs.png',
-    tab: 'Web Development'
+    tab: 'Web Development',
+    icon: (<IoLogoNodejs size='md' />)
   },
   {
     name: 'MongoDB',
     image: '/tech/mongodb.png',
-    tab: 'Database'
+    tab: 'Database',
+    icon: (<IoLeafOutline size='md' />)
   },
   {
     name: 'JavaScript',
     image: '/tech/javascript.png',
-    tab: 'General'
+    tab: 'General',
+    icon: (<IoLogoJavascript size='md' />)
   },
   {
     name: 'TypeScript',
     image: '/tech/typescript.png',
-    tab: 'General'
+    tab: 'General',
+    icon: (<IoCodeOutline size='md' />)
   },
   {
     name: 'PHP',
     image: '/tech/php.png',
-    tab: 'General'
+    tab: 'General',
+    icon: (<IoCodeOutline size='md' />)
   },
   {
     name: 'Python',
     image: '/tech/python.png',
-    tab: 'General'
+    tab: 'General',
+    icon: (<IoLogoPython size='md' />)
   },
   {
     name: 'Node.js',
     image: '/tech/nodejs.png',
-    tab: 'General'
+    tab: 'General',
+    icon: (<IoLogoNodejs size='md' />)
   },
   {
     name: 'PostgreSQL',
     image: '/tech/postgresql.png',
-    tab: 'Database'
+    tab: 'Database',
+    icon: (<IoServerOutline size='md' />)
   },
   {
     name: 'MySQL',
     image: '/tech/mysql.png',
-    tab: 'Database'
+    tab: 'Database',
+    icon: (<IoServerOutline size='md' />)
   },
   {
     name: 'Rust Lang',
     image: '/tech/rustlang.png',
-    tab: 'General'
+    tab: 'General',
+    icon: (<IoCodeOutline size='md' />)
   },
   {
     name: 'CSharp',
     image: '/tech/csharp.png',
-    tab: 'General'
+    tab: 'General',
+    icon: (<IoCodeOutline size='md' />)
   },
   {
     name: 'Redis',
     image: '/tech/redis.png',
-    tab: 'Database'
+    tab: 'Database',
+    icon: (<IoLayersOutline size='md' />)
   },
   {
     name: 'Django',
     image: '/tech/django.png',
-    tab: 'Web Development'
+    tab: 'Web Development',
+    icon: (<IoEarthOutline size='md' />)
   },
   {
     name: 'Flask',
     image: '/tech/flask.png',
-    tab: 'Web Development'
+    tab: 'Web Development',
+    icon: (<IoEarthOutline size='md' />)
   },
   {
     name: '.Net Core',
     image: '/tech/dotnetcore.png',
-    tab: 'Web Development'
+    tab: 'Web Development',
+    icon: (<IoEarthOutline size='md' />)
   },
   {
     name: 'Chakra UI',
     image: '/tech/chakraui.png',
-    tab: 'Web Design'
+    tab: 'Web Design',
+    icon: (<IoColorWandOutline size='md' />)
   },
   {
     name: 'Material UI',
     image: '/tech/materialui.png',
-    tab: 'Web Design'
+    tab: 'Web Design',
+    icon: (<IoColorWandOutline size='md' />)
   }
 ]

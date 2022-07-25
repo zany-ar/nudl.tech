@@ -177,13 +177,13 @@ const Index = () => {
           </Heading>
           <br />
           <Text color={'text'}>
-            Technologies I use on regular basis.
+            Technologies I use often.
           </Text>
           <br />
           <TechStack techstack={techstack} />
         </Box>
 
-        <Footer></Footer>
+        <Footer />
       </Main>
     </Container>
   )

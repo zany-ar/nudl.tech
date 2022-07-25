@@ -196,7 +196,7 @@ export const techstack = [
     tab: 'General'
   },
   {
-    name: 'C#',
+    name: 'CSharp',
     image: '/tech/csharp.png',
     tab: 'General'
   },

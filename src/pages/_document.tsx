@@ -7,8 +7,6 @@ export default class Document extends NextDocument {
     return (
       <Html>
         <Head>
-          <title>{head.title}</title>
-
           {/* links */}
           <link rel="icon" href="/favicon.ico" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />

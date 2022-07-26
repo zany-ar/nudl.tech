@@ -1,4 +1,4 @@
-import { Button } from "@chakra-ui/react";
+import { Button, useColorModeValue } from "@chakra-ui/react";
 import { IoLogoGithub, IoLogoYoutube } from "react-icons/io5";
 
 export const Social = ({ github = null, youtube = null }) => (
@@ -13,23 +13,25 @@ export const Social = ({ github = null, youtube = null }) => (
         leftIcon={<IoLogoGithub />}
         size="sm"
         target={"_blank"}
+        borderColor={useColorModeValue('black', 'gray.600')}
       >
         GitHub
       </Button>
     )}
     {youtube && (
       <Button
-      mr={"5px"}
-      as={'a'}
-      href={youtube}
-      variant={'outline'}
-      rounded={'button'}
-      leftIcon={<IoLogoYoutube />}
-      size="sm"
-      target={"_blank"}
-    >
-      YouTube
-    </Button>
+        mr={"5px"}
+        as={'a'}
+        href={youtube}
+        variant={'outline'}
+        rounded={'button'}
+        leftIcon={<IoLogoYoutube />}
+        size="sm"
+        target={"_blank"}
+        borderColor={useColorModeValue('black', 'gray.600')}
+      >
+        YouTube
+      </Button>
     )}
   </>
 )

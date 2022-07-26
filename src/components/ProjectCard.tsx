@@ -18,7 +18,8 @@ import { Tags } from './Tags';
 
 
 export default function ProjectCard({ imgsrc, title, description, techstack, link, fontFamily = "mono", fontWeight = 400, github = null, right = false }) {
-
+  
+  const color = useColorModeValue('accent', 'gray')
   return (
     <Center py={6}>
       <Stack
@@ -61,16 +62,32 @@ export default function ProjectCard({ imgsrc, title, description, techstack, lin
           p={1}
           pt={2}>
           <Box verticalAlign={'top'}>
-            <Heading fontSize={'2xl'} fontFamily={fontFamily} fontWeight={fontWeight}>
+            <Heading
+              fontSize={'2xl'}
+              fontFamily={fontFamily}
+              fontWeight={fontWeight}
+              color='white'
+              textShadow={`
+                -1px -1px 0px #000,
+                0px -1px 0px #000,
+                1px -1px 0px #000,
+                -1px  0px 0px #000,
+                1px  0px 0px #000,
+                -1px  1px 0px #000,
+                0px  1px 0px #000,
+                1px  1px 0px #000
+              `}
+              _dark={{ color: 'body' }}>
               {title}
-            </Heading></Box>
+            </Heading>
+          </Box>
           <Box
             borderWidth="1px"
             borderRadius="lg"
             padding={'10px 4px'}
             css={{ backdropFilter: 'blur(30px)' }}
             bgColor='navbg'
-            boxShadow={"0 2px 10px -2px rgba(0,0,0,1)"}
+            boxShadow={"0 2px 5px -2px rgba(0,0,0,1)"}
             position={'relative'}
             minH="100px"
             paddingBottom="70px"
@@ -81,11 +98,11 @@ export default function ProjectCard({ imgsrc, title, description, techstack, lin
               color="text">
               {description}
             </Text>
-            <Button leftIcon={<IoLink />} aria-label='go-to-website' position={'absolute'} left="10px" bottom="10px" size={'sm'} as="a" target={'_blank'} href={link}>
+            <Button colorScheme={color} leftIcon={<IoLink />} aria-label='go-to-website' position={'absolute'} left="10px" bottom="10px" size={'sm'} as="a" target={'_blank'} href={link}>
               Link
             </Button>
             {github && (
-              <Button leftIcon={<IoLogoGithub />} aria-label='go-to-website' position={'absolute'} left="95px" bottom="10px" size={'sm'} as="a" target={'_blank'} href={github}>
+              <Button colorScheme={color} leftIcon={<IoLogoGithub />} aria-label='go-to-website' position={'absolute'} left="95px" bottom="10px" size={'sm'} as="a" target={'_blank'} href={github}>
                 GitHub
               </Button>
             )}

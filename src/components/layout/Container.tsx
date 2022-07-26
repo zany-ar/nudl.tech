@@ -5,12 +5,8 @@ export const Container = (props: FlexProps) => (
     direction="column"
     alignItems="center"
     justifyContent="flex-start"
-    bg="white"
-    color="black"
-    _dark={{
-      bg: 'gray.900',
-      color: 'white',
-    }}
+    bgColor="bg"
+    color="body"
     transition="all 0.15s ease-out"
     {...props}
   />

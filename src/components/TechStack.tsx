@@ -16,7 +16,7 @@ export const TechStack = ({ techstack }) => {
         <Button
           size={'sm'}
           variant={selected === 'all' ? 'solid' : 'outline'}
-          colorScheme={'orange'}
+          colorScheme={'accent'}
           m='5px'
           rounded={'button'}
           leftIcon={<IoHardwareChip />}
@@ -29,7 +29,7 @@ export const TechStack = ({ techstack }) => {
             size={'sm'}
             key={i}
             variant={selected === tab ? 'solid' : 'outline'}
-            colorScheme={'orange'}
+            colorScheme={'accent'}
             m='5px'
             rounded={'button'}
             leftIcon={icons[i % icons.length]}

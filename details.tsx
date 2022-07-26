@@ -35,7 +35,7 @@ export const intro = {
     <>
       I'm a full stack developer and a freelancer who likes to build digital products and services, alias {' '}
       <NextLink href={'https://github.com/0xCN/'} passHref>
-        <Link>nudlツ</Link>
+        <Link fontWeight={'600'} textDecoration={'underline'}>nudlツ</Link>
       </NextLink>.
       If you want to partner up on a project or just want to talk:
     </>
@@ -106,7 +106,7 @@ export const sideProjects = [
   {
     title: 'WeebMyIp',
     description: `Website with an API to get information on IP address and an anime girl to read your IP for you`,
-    techstack: ['Python, Flask', 'HTML5', 'CSS3'],
+    techstack: ['Python', 'Flask', 'HTML5', 'CSS3'],
     github: 'https://github.com/0xanteiku/weebmyip',
     link: 'https://weebmyip.pythonanywhere.com'
   },

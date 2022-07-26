@@ -17,7 +17,7 @@ export const DarkModeSwitch = () => {
       >
         <IconButton
           aria-label="Toggle theme"
-          colorScheme={useColorModeValue('purple', 'orange')}
+          colorScheme={'accent'}
           icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
           onClick={toggleColorMode}
         ></IconButton>

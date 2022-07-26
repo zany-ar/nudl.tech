@@ -8,10 +8,11 @@ export const Tags = ({ techstack }) => (
         key={i}
         px={2}
         py={1}
-        bg={useColorModeValue('gray.50', 'gray.800')}
+        bgColor={'tag'}
         color="helper"
         textTransform={'none'}
-        fontWeight={'400'}>
+        borderWidth={'2px'}
+        fontWeight={'600'}>
         {tech}
       </Badge>
     ))}

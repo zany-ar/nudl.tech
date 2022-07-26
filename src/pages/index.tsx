@@ -75,8 +75,7 @@ const Index = () => {
           </Box>
           <Box mt={'30px !important'}>
             <Social
-              github={social.github}
-              youtube={social.youtube} />
+              {...social} />
           </Box>
         </Box>
 

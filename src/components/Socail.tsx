@@ -1,7 +1,7 @@
 import { Button, useColorModeValue } from "@chakra-ui/react";
-import { IoLogoGithub, IoLogoYoutube } from "react-icons/io5";
+import { IoLogoDiscord, IoLogoGithub, IoLogoYoutube } from "react-icons/io5";
 
-export const Social = ({ github = null, youtube = null }) => (
+export const Social = ({ github = null, youtube = null, discord = null }) => (
   <>
     {github && (
       <Button
@@ -31,6 +31,21 @@ export const Social = ({ github = null, youtube = null }) => (
         borderColor={useColorModeValue('black', 'gray.600')}
       >
         YouTube
+      </Button>
+    )}
+    {discord && (
+      <Button
+        mr={"5px"}
+        as={'a'}
+        href={discord}
+        variant={'outline'}
+        rounded={'button'}
+        leftIcon={<IoLogoDiscord />}
+        size="sm"
+        target={"_blank"}
+        borderColor={useColorModeValue('black', 'gray.600')}
+      >
+        Discord
       </Button>
     )}
   </>

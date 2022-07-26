@@ -44,7 +44,8 @@ export const intro = {
 
 export const social = {
   github: 'https://github.com/0xCN/',
-  youtube: 'https://www.youtube.com/channel/UCjHuPi8CE4U_5BbnpyYvjQg'
+  youtube: 'https://www.youtube.com/channel/UCjHuPi8CE4U_5BbnpyYvjQg',
+  discord: 'https://discordapp.com/users/608619591677247522'
 }
 
 export const aboutMe = (

@@ -130,126 +130,126 @@ export const techstack = [
     name: 'Visual Studio Code',
     image: '/tech/vscode.png',
     tab: 'General',
-    icon: (<IoCodeSlashOutline size='md' />)
+    icon: (<IoCodeSlashOutline fontSize={'34px'} />)
   },
   {
     name: 'Next.js',
     image: '/tech/nextjs.png',
     tab: 'Web Development',
-    icon: (<IoTriangleOutline size='md' />)
+    icon: (<IoTriangleOutline fontSize={'34px'} />)
   },
   {
     name: 'Figma',
     image: '/tech/figma.png',
     tab: 'Web Design',
-    icon: (<IoLogoFigma size='md' />)
+    icon: (<IoLogoFigma fontSize={'34px'} />)
   },
   {
     name: 'React.js',
     image: '/tech/reactjs.png',
     tab: 'Web Development',
-    icon: (<IoLogoReact size='md' />)
+    icon: (<IoLogoReact fontSize={'34px'} />)
   },
   {
     name: 'Express.js',
     image: '/tech/expressjs.png',
     tab: 'Web Development',
-    icon: (<IoLogoNodejs size='md' />)
+    icon: (<IoLogoNodejs fontSize={'34px'} />)
   },
   {
     name: 'MongoDB',
     image: '/tech/mongodb.png',
     tab: 'Database',
-    icon: (<IoLeafOutline size='md' />)
+    icon: (<IoLeafOutline fontSize={'34px'} />)
   },
   {
     name: 'JavaScript',
     image: '/tech/javascript.png',
     tab: 'General',
-    icon: (<IoLogoJavascript size='md' />)
+    icon: (<IoLogoJavascript fontSize={'34px'} />)
   },
   {
     name: 'TypeScript',
     image: '/tech/typescript.png',
     tab: 'General',
-    icon: (<IoCodeOutline size='md' />)
+    icon: (<IoCodeOutline fontSize={'34px'} />)
   },
   {
     name: 'PHP',
     image: '/tech/php.png',
     tab: 'General',
-    icon: (<IoCodeOutline size='md' />)
+    icon: (<IoCodeOutline fontSize={'34px'} />)
   },
   {
     name: 'Python',
     image: '/tech/python.png',
     tab: 'General',
-    icon: (<IoLogoPython size='md' />)
+    icon: (<IoLogoPython fontSize={'34px'} />)
   },
   {
     name: 'Node.js',
     image: '/tech/nodejs.png',
     tab: 'General',
-    icon: (<IoLogoNodejs size='md' />)
+    icon: (<IoLogoNodejs fontSize={'34px'} />)
   },
   {
     name: 'PostgreSQL',
     image: '/tech/postgresql.png',
     tab: 'Database',
-    icon: (<IoServerOutline size='md' />)
+    icon: (<IoServerOutline fontSize={'34px'} />)
   },
   {
     name: 'MySQL',
     image: '/tech/mysql.png',
     tab: 'Database',
-    icon: (<IoServerOutline size='md' />)
+    icon: (<IoServerOutline fontSize={'34px'} />)
   },
   {
     name: 'Rust Lang',
     image: '/tech/rustlang.png',
     tab: 'General',
-    icon: (<IoCodeOutline size='md' />)
+    icon: (<IoCodeOutline fontSize={'34px'} />)
   },
   {
     name: 'CSharp',
     image: '/tech/csharp.png',
     tab: 'General',
-    icon: (<IoCodeOutline size='md' />)
+    icon: (<IoCodeOutline fontSize={'34px'} />)
   },
   {
     name: 'Redis',
     image: '/tech/redis.png',
     tab: 'Database',
-    icon: (<IoLayersOutline size='md' />)
+    icon: (<IoLayersOutline fontSize={'34px'} />)
   },
   {
     name: 'Django',
     image: '/tech/django.png',
     tab: 'Web Development',
-    icon: (<IoEarthOutline size='md' />)
+    icon: (<IoEarthOutline fontSize={'34px'} />)
   },
   {
     name: 'Flask',
     image: '/tech/flask.png',
     tab: 'Web Development',
-    icon: (<IoEarthOutline size='md' />)
+    icon: (<IoEarthOutline fontSize={'34px'} />)
   },
   {
     name: '.Net Core',
     image: '/tech/dotnetcore.png',
     tab: 'Web Development',
-    icon: (<IoEarthOutline size='md' />)
+    icon: (<IoEarthOutline fontSize={'34px'} />)
   },
   {
     name: 'Chakra UI',
     image: '/tech/chakraui.png',
     tab: 'Web Design',
-    icon: (<IoColorWandOutline size='md' />)
+    icon: (<IoColorWandOutline fontSize={'34px'} />)
   },
   {
     name: 'Material UI',
     image: '/tech/materialui.png',
     tab: 'Web Design',
-    icon: (<IoColorWandOutline size='md' />)
+    icon: (<IoColorWandOutline fontSize={'34px'} />)
   }
 ]

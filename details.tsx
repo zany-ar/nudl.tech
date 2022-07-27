@@ -12,7 +12,7 @@ export const head = {
   keywords: "0xCN, nudlツ, Zanyar Jamal, Freelancer, Web Developer, Cyber Security Enthusiast, Full Stack Developer",
   url: "https://nudl.tech",
   image: "https://nudl.tech/screenshot.png",
-  googleAnalytics: "G-JW53KS3KXR"
+  googleAnalytics: "G-HL0YCRR2PD"
 }
 
 

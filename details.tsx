@@ -11,7 +11,8 @@ export const head = {
   description: `Hello! My name is Zanyar, I build web applications, freelance, tutor programming, and live off eating instant ramen 🍜.`,
   keywords: "0xCN, nudlツ, Zanyar Jamal, Freelancer, Web Developer, Cyber Security Enthusiast, Full Stack Developer",
   url: "https://nudl.tech",
-  image: "https://nudl.tech/screenshot.png"
+  image: "https://nudl.tech/screenshot.png",
+  googleAnalytics: "G-JW53KS3KXR"
 }
 
 

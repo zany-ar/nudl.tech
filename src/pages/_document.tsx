@@ -1,6 +1,7 @@
 import NextDocument, { Html, Head, Main, NextScript } from 'next/document'
 import { ColorModeScript } from '@chakra-ui/react'
 import { head } from '../../details'
+import Script from 'next/script'
 
 export default class Document extends NextDocument {
   render() {
@@ -32,6 +33,20 @@ export default class Document extends NextDocument {
           <meta name="twitter:title" content={head.title} />
           <meta name="twitter:description" content={head.description} />
           <meta name="twitter:image" content={head.image} />
+
+          {/* google search verification */}
+          <meta name="google-site-verification" content="nkoLta-09dCK60vGIaJ21-BrZE9hQiuz5fG5Yq6Npt0" />
+          
+          {/* <!-- Google Analytics --> */}
+          <Script strategy='lazyOnload'>
+            {`
+            window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };ga.l=+new Date;
+            ga('create', '${head.googleAnalytics}', 'auto');
+            ga('send', 'pageview');
+            `}
+          </Script>
+          <Script strategy='lazyOnload' async src='https://www.google-analytics.com/analytics.js'></Script>
+          {/* <!-- End Google Analytics --> */}
         </Head>
         <body>
           {/* Make Color mode to persists when you refresh the page. */}

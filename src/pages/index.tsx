@@ -17,17 +17,28 @@ import { Container } from '../components/layout/Container'
 import { Main } from '../components/layout/Main'
 import { Footer } from '../components/layout/Footer'
 import Navbar from '../components/layout/Navbar'
-import { aboutMe, email, intro, projects, recentTechnologies, sideProjects, social, techstack } from '../../details'
+import { aboutMe, email, head, intro, projects, recentTechnologies, sideProjects, social, techstack } from '../../details'
 import { IoFileTrayFull, IoIdCard, IoLayers, IoPlay, IoTerminal } from 'react-icons/io5'
 import ProjectCard from '../components/ProjectCard'
 import { SideProjectCard } from '../components/SideProjectCard'
 import { Social } from '../components/Socail'
 import { TechStack } from '../components/TechStack'
+import Script from 'next/script'
 
 
 const Index = () => {
   return (
     <Container>
+      {/* <!-- Google Analytics --> */}
+      <Script strategy='afterInteractive'>
+        {`
+            window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };ga.l=+new Date;
+            ga('create', '${head.googleAnalytics}', 'auto');
+            ga('send', 'pageview');
+            `}
+      </Script>
+      <Script strategy='afterInteractive' async src='https://www.google-analytics.com/analytics.js'></Script>
+      {/* <!-- End Google Analytics --> */}
       <Navbar />
       <Main id='intro'>
 

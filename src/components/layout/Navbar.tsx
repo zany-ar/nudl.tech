@@ -60,7 +60,7 @@ const Navbar = props => {
       >
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing={'tighter'}>
-            <Link href='/#intro'>
+            <Link color={'body'} href='/#intro'>
               nudlツ
             </Link>
           </Heading>
@@ -83,7 +83,9 @@ const Navbar = props => {
             style={{ gap: 4 }}
             pl={2}>
             <Text color={"helper"}><IoIdCard /></Text>
-            About Me
+            <Text color={'text'}>
+              About Me
+            </Text>
           </LinkItem>
           <LinkItem
             target="_self"
@@ -94,7 +96,9 @@ const Navbar = props => {
             style={{ gap: 4 }}
             pl={2}>
             <Text color={"helper"}><IoTerminal /></Text>
-            Projects
+            <Text color={'text'}>
+              Projects
+            </Text>
           </LinkItem>
           <LinkItem
             target="_self"
@@ -105,7 +109,9 @@ const Navbar = props => {
             style={{ gap: 4 }}
             pl={2}>
             <Text color={"helper"}><IoLayers /></Text>
-            Tech Stack
+            <Text color={'text'}>
+              Tech Stack
+            </Text>
           </LinkItem>
           <LinkItem
             target="_blank"
@@ -117,7 +123,9 @@ const Navbar = props => {
             pl={2}
           >
             <Text color={"helper"}><IoLogoGithub /></Text>
-            Source
+            <Text color={'text'}>
+              Source
+            </Text>
           </LinkItem>
         </Stack>
 

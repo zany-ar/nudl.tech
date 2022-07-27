@@ -13,7 +13,7 @@ const theme = extendTheme({
     colors: {
       text: {
         default: 'gray.800',
-        _dark: '#ade3b8',
+        _dark: '#9ca2a9',
       },
       heroGradientStart: {
         default: '#7928CA',

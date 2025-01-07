@@ -21,9 +21,8 @@ import {
 
 export const head = {
   title: "nudlツ portfolio",
-  description: `Hello! My name is Zanyar, I build web applications, freelance, tutor programming, and live off eating instant ramen 🍜.`,
-  keywords:
-    "0xCN, nudlツ, Zanyar Jamal, Freelancer, Web Developer, Cyber Security Enthusiast, Full Stack Developer",
+  description: `Hello! My name is Zanyar, I build robust scalable systems, and live off eating instant ramen 🍜.`,
+  keywords: "zany-ar",
   url: "https://nudl.tech",
   image: "https://nudl.tech/screenshot.png",
   googleAnalytics: "G-HL0YCRR2PD",
@@ -44,12 +43,12 @@ export const email = "zanyar@nudl.tech";
 
 export const intro = {
   name: "Zanyar Jamal",
-  moto: "Full Stack Engineer",
+  moto: "Software Engineer",
   text: (
     <>
       I'm a software engineer who likes to build digital products and services,
       alias{" "}
-      <NextLink href={"https://github.com/0xCN/"} passHref>
+      <NextLink href={"https://github.com/zany-ar/"} passHref>
         <Link fontWeight={"600"} textDecoration={"underline"}>
           nudlツ
         </Link>
@@ -60,8 +59,9 @@ export const intro = {
 };
 
 export const social = {
-  github: "https://github.com/0xCN/",
-  // discord: "https://discordapp.com/users/608619591677247522",
+  github: "https://github.com/zany-ar/",
+  youtube: "https://www.youtube.com/@zanyar-su",
+  // twitter: "https://x.com/username",
 };
 
 export const aboutMe = (
@@ -69,44 +69,43 @@ export const aboutMe = (
     Hello! My name is <Helper>Zanyar</Helper>, I build web applications,
     distributed systems, and live off eating instant ramen 🍜.
     <br />
-    <br />I first started out as a <Helper>cyber-security enthusiast</Helper> —
-    and learned programming only to build automated tools to make hacking easier
-    and faster.
+    <br />I love working with the <Helper>latest technologies</Helper>, and have
+    even become a jack of all trades. working with <Helper>AI models</Helper>,
+    to experience with Game Engines and Web Development
     <br />
-    <br />
-    Since then, I’ve updated my repertoire with the{" "}
-    <Helper>latest technologies</Helper>, and have even become a jack of all
-    trades and worked in most fields including <Helper>System Design</Helper>,{" "}
-    <Helper>Mobile App Development</Helper>, and my current occupation a{" "}
-    <Helper>Full Stack Engineer</Helper>.
+    <br />I have professional experience in <Helper>System Design</Helper>,{" "}
+    <Helper>Legacy System Modernization</Helper>,{" "}
+    <Helper>Full Stack Web Development</Helper>.
     <br />
     <br />
     Here are a few technologies I’ve been working with recently:
   </>
 );
 
-export const recentTechnologies = [
-  "Next.js",
-  "TypeScript",
-  "MongoDB",
-  "Redis",
-  "Digital Ocean",
-  "Chakra-UI",
-];
+export const recentTechnologies = ["Next.js", "Zustand", "Three.js", "Redis"];
 
 export const projects = [
+  {
+    title: "WickdLab",
+    description: `Web Based 2.5D AI Animation Studio`,
+    link: "https://wickdlab.com",
+    techstack: ["R3F - Three.js", "Zustand", "Next.js", "DrizzleORM"],
+    imgsrc: "/images/wickdlab.png",
+    youtube: "https://www.youtube.com/watch?v=eaaJA4JhhG8",
+  },
   {
     title: "Pentesting Jobs",
     description: `A job board for cyber-security experts, find / post jobs.`,
     link: "https://pentestingjobs.co",
+    github: "https://github.com/zany-ar/pentesting-jobs",
     techstack: ["TypeScript", "Next.js", "MongoDB", "Material-UI"],
     imgsrc: "/images/pentesting_jobs.png",
   },
   {
     title: "Nudolio",
     description: `Open source software license key manager built with MERN & redux with a web api to build on.`,
-    link: "https://nudolio.herokuapp.com/",
-    github: "https://github.com/0xCN/nudolio",
+    // link: "https://nudolio.herokuapp.com/",
+    github: "https://github.com/zany-ar/nudolio",
     techstack: ["Express.js", "React.js", "Redux", "MongoDB"],
     imgsrc: "/images/nudolio.png",
   },
@@ -114,22 +113,28 @@ export const projects = [
 
 export const sideProjects = [
   {
+    title: "NerdKun",
+    description: `Custom VTUBER implemented in Godot with real time face tracking.`,
+    techstack: ["GDScript", "Godot", "Web Socket"],
+    youtube: "https://www.youtube.com/watch?v=qriawXI3pRM",
+  },
+  {
     title: "Workaholic",
     description: `A time manager that shouts at you when you are not doing your work.`,
     techstack: ["Python", "JavaScript", "Chrome Extension"],
-    github: "https://github.com/0xCN/workaholic",
+    github: "https://github.com/zany-ar/workaholic",
   },
   {
     title: "Kawaii-Vault",
     description: `Some sort of password manager that uses GitHub's Gist service to store its encrypted data.`,
     techstack: ["Rust", "AES-Encryption", "GitHub API"],
-    github: "https://github.com/0xCN/kawaii-vault",
+    github: "https://github.com/zany-ar/kawaii-vault",
   },
   {
     title: "0xVault",
     description: `Flutter project, It's an app for taking notes & saving your passwords with GitHub Gist's API.`,
     techstack: ["Flutter", "Dart", "GitHub API"],
-    github: "https://github.com/0xCN/0xVAULT",
+    github: "https://github.com/zany-ar/0xVAULT",
     youtube: "https://www.youtube.com/watch?v=YMaDtI__OQE",
   },
   {
@@ -143,13 +148,13 @@ export const sideProjects = [
     title: "MailBot",
     description: `A discord bot which forwards new emails to your discord server, you can reply or send new emails.`,
     techstack: ["Python", "AioIMAPLib", "AioSMTPLib"],
-    github: "https://github.com/0xCN/MailBot",
+    github: "https://github.com/zany-ar/MailBot",
   },
   {
     title: "PasteJS",
     description: `A chrome extension to prevent both CSS & JS PasteJacking attacks`,
     techstack: ["JavaScript", "HTML5"],
-    github: "https://github.com/0xCN/PasteJS",
+    github: "https://github.com/zany-ar/PasteJS",
   },
 ];
 

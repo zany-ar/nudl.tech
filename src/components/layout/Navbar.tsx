@@ -1,4 +1,4 @@
-import NextLink from 'next/link'
+import NextLink from "next/link";
 import {
   Container,
   Box,
@@ -12,18 +12,18 @@ import {
   MenuButton,
   IconButton,
   useColorModeValue,
-  Text
-} from '@chakra-ui/react'
-import { HamburgerIcon } from '@chakra-ui/icons'
-import { DarkModeSwitch } from './DarkModeSwitch'
-import { IoIdCard, IoLayers, IoLogoGithub, IoTerminal } from 'react-icons/io5'
+  Text,
+} from "@chakra-ui/react";
+import { HamburgerIcon } from "@chakra-ui/icons";
+import { DarkModeSwitch } from "./DarkModeSwitch";
+import { IoIdCard, IoLayers, IoLogoGithub, IoTerminal } from "react-icons/io5";
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
-  const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
+  const inactiveColor = useColorModeValue("gray200", "whiteAlpha.900");
   return (
     <NextLink href={href} passHref scroll={false}>
       <Link
-        rounded={'button'}
+        rounded={"button"}
         p={2}
         color={inactiveColor}
         target={target}
@@ -32,11 +32,11 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
         {children}
       </Link>
     </NextLink>
-  )
-}
+  );
+};
 
-const Navbar = props => {
-  const { path } = props
+const Navbar = (props) => {
+  const { path } = props;
 
   return (
     <Box
@@ -44,9 +44,9 @@ const Navbar = props => {
       as="nav"
       w="100%"
       bgColor={"navbg"}
-      css={{ backdropFilter: 'blur(30px)' }}
+      css={{ backdropFilter: "blur(30px)" }}
       zIndex={2}
-      fontFamily={'mono'}
+      fontFamily={"mono"}
       boxShadow={"0 2px 3px -2px rgba(0,0,0,.5)"}
       {...props}
     >
@@ -59,17 +59,17 @@ const Navbar = props => {
         justifyContent="space-between"
       >
         <Flex align="center" mr={5}>
-          <Heading as="h1" size="lg" letterSpacing={'tighter'}>
-            <Link color={'body'} href='/#intro'>
+          <Heading as="h1" size="lg" letterSpacing={"tighter"}>
+            <Link color={"body"} href="/#intro">
               nudlツ
             </Link>
           </Heading>
         </Flex>
 
         <Stack
-          direction={{ base: 'column', md: 'row' }}
-          display={{ base: 'none', md: 'flex' }}
-          width={{ base: 'full', md: 'auto' }}
+          direction={{ base: "column", md: "row" }}
+          display={{ base: "none", md: "flex" }}
+          width={{ base: "full", md: "auto" }}
           alignItems="center"
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
@@ -81,11 +81,12 @@ const Navbar = props => {
             display="inline-flex"
             alignItems="center"
             style={{ gap: 4 }}
-            pl={2}>
-            <Text color={"helper"}><IoIdCard /></Text>
-            <Text color={'text'}>
-              About Me
+            pl={2}
+          >
+            <Text color={"helper"}>
+              <IoIdCard />
             </Text>
+            <Text color={"text"}>About Me</Text>
           </LinkItem>
           <LinkItem
             target="_self"
@@ -94,11 +95,12 @@ const Navbar = props => {
             display="inline-flex"
             alignItems="center"
             style={{ gap: 4 }}
-            pl={2}>
-            <Text color={"helper"}><IoTerminal /></Text>
-            <Text color={'text'}>
-              Projects
+            pl={2}
+          >
+            <Text color={"helper"}>
+              <IoTerminal />
             </Text>
+            <Text color={"text"}>Projects</Text>
           </LinkItem>
           <LinkItem
             target="_self"
@@ -107,32 +109,33 @@ const Navbar = props => {
             display="inline-flex"
             alignItems="center"
             style={{ gap: 4 }}
-            pl={2}>
-            <Text color={"helper"}><IoLayers /></Text>
-            <Text color={'text'}>
-              Tech Stack
+            pl={2}
+          >
+            <Text color={"helper"}>
+              <IoLayers />
             </Text>
+            <Text color={"text"}>Tech Stack</Text>
           </LinkItem>
           <LinkItem
             target="_blank"
-            href="https://github.com/0xCN/nudl.tech"
+            href="https://github.com/zany-ar/nudl.tech"
             path={path}
             display="inline-flex"
             alignItems="center"
             style={{ gap: 4 }}
             pl={2}
           >
-            <Text color={"helper"}><IoLogoGithub /></Text>
-            <Text color={'text'}>
-              Source
+            <Text color={"helper"}>
+              <IoLogoGithub />
             </Text>
+            <Text color={"text"}>Source</Text>
           </LinkItem>
         </Stack>
 
         <Box flex={1} textAlign="right">
           <DarkModeSwitch />
 
-          <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
+          <Box ml={2} display={{ base: "inline-block", md: "none" }}>
             <Menu isLazy id="navbar-menu">
               <MenuButton
                 as={IconButton}
@@ -150,10 +153,7 @@ const Navbar = props => {
                 <NextLink href="/#tech-stack" passHref>
                   <MenuItem as={Link}>Tech Stack</MenuItem>
                 </NextLink>
-                <MenuItem
-                  as={Link}
-                  href="https://github.com/0xCN/nudl-tech"
-                >
+                <MenuItem as={Link} href="https://github.com/0xCN/nudl-tech">
                   View Source
                 </MenuItem>
               </MenuList>
@@ -162,7 +162,7 @@ const Navbar = props => {
         </Box>
       </Container>
     </Box>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

@@ -61,9 +61,11 @@ const Index = () => {
       <Navbar />
       <Main id="intro">
         {/* Intro */}
+        {/*
         <Text color={"gray"} fontFamily={"mono"}>
           note: this portfolio is outdated
         </Text>
+        */}
         <Box>
           <Text color={"helper"} fontFamily={"mono"}>
             Hi, my name is
@@ -192,6 +194,7 @@ const Index = () => {
                 imgsrc={project.imgsrc}
                 link={project["link"]}
                 github={project["github"]}
+                youtube={project["youtube"]}
               />
             ))}
           </Box>

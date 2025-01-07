@@ -33,4 +33,7 @@ npm run dev
 ## forking this repo
 > this project is under MIT License. click <a href="LICENSE">here</a> to checkout it out.
 
-you can fork this project and create your own portfolios just be sure to add a link back to <a href="https://nudl.tech">my website</a>.
+you can fork this project and create your own portfolios
+
+#### optional
+would be cool to add a link back to <a href="https://nudl.tech">my website</a>.
